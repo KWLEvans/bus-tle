@@ -1,8 +1,12 @@
 <div class="container">
-  <h1>{{model.headline}}</h1>
-  <h4>By: <strong>{{model.author}}</strong></h4>
-  <img src={{model.image}}>
-  <p>{{model.content}}</p>
-  {{update-article article=model updateArticle="updateArticle"}}
-  <button class="btn btn-danger" {{action 'destroyArticle' model}}>Delete</button>
+  {{#if showUpdateForm}}
+    {{update-article article=model updateArticle="updateArticle"}}
+  {{else}}
+    <h1>{{model.headline}}</h1>
+    <h4>By: <strong>{{model.author}}</strong></h4>
+    <img src={{model.image}}>
+    <p>{{model.content}}</p>
+    <button class="btn btn-warning" {{action 'showUpdateForm'}}>Edit</button>
+    <button class="btn btn-danger" {{action 'destroyArticle' model}}>Delete</button>
+  {{/if}}
 </div>
