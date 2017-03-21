@@ -1,0 +1,17 @@
+body {
+  background-color: #f7f7f7;
+}
+
+.article-tile {
+  background-color: white;
+  margin-bottom: 20px;
+}
+
+.article-tile img {
+  height: 300px;
+  width: 300px;
+}
+
+.article-teaser {
+  padding-top: 10%;
+}
