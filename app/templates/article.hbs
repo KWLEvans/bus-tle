@@ -3,4 +3,6 @@
   <h4>By: <strong>{{model.author}}</strong></h4>
   <img src={{model.image}}>
   <p>{{model.content}}</p>
+  {{update-article article=model updateArticle="updateArticle"}}
+  <button class="btn btn-danger" {{action 'destroyArticle' model}}>Delete</button>
 </div>
