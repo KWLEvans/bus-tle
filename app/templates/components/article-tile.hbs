@@ -1,4 +1,5 @@
 <div class="container row article-tile">
+  {{#link-to 'article' article.id class="link"}}
   <div class="col-xs-6">
     <img src={{article.image}}>
   </div>
@@ -7,4 +8,5 @@
     <p>{{article.teaser}}</p>
     <h6>By: <strong>{{article.author}}</strong></h6>
   </div>
+  {{/link-to}}
 </div>

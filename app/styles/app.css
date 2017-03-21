@@ -2,6 +2,10 @@ body {
   background-color: #f7f7f7;
 }
 
+.jumbotron {
+  margin-top: 60px;
+}
+
 .article-tile {
   background-color: white;
   margin-bottom: 20px;
